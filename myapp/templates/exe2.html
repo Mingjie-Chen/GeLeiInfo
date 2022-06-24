@@ -1,0 +1,8 @@
+{% extends "base.html"%}
+
+{% block content %}
+	<h1>Hi, {{user.username}}</h1>
+	{% for list in lists %}
+	<div><p>{{list.username}} says {{list.saying}}</p></div>
+	{% endfor %}
+{% endblock %}
